@@ -1,0 +1,26 @@
+<br/>
+<label for="formName">Email</label>
+<input id="formName" type="email" [(ngModel)]="inputName"  />
+<br/>
+<br/>
+<label for="formClave">Contraseña</label>
+<input id="formClave" type="{{typeText}}" [(ngModel)]="inputClaves"  />
+
+<br/>
+<br/>
+
+<input type="button" value="Mostrar Contraseña" (click)="changePassword()" />
+
+<br/>
+<br/>
+
+<section class="example-section">
+    <mat-checkbox class="example-margin" (click)="enableSumbit()">Aceptar Terminos </mat-checkbox>
+
+</section>
+
+<br/>
+<br/>
+ 
+  <input type="{{typeView}}" value="Login" />
+  
