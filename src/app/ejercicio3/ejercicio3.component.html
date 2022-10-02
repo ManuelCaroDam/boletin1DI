@@ -1,1 +1,32 @@
-<p>ejercicio3 works!</p>
+<div>
+
+<input type="button" value="Ocultar 1º Columna" (click)="primeraColumna()" />
+
+</div>
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Nombre </th>
+      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+
+  
+    <ng-container matColumnDef="surname">
+      <th mat-header-cell *matHeaderCellDef> Apellido </th>
+      <td mat-cell *matCellDef="let element"> {{element.surname}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="birthdate">
+      <th mat-header-cell *matHeaderCellDef> Fecha/Nac </th>
+      <td mat-cell *matCellDef="let element"> {{element.birthdate}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="curso">
+      <th mat-header-cell *matHeaderCellDef> Curso </th>
+      <td mat-cell *matCellDef="let element"> {{element.curso}} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>

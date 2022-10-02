@@ -11,6 +11,7 @@ import { Ejercicio3Component } from './ejercicio3/ejercicio3.component';
 import { Ejercicio4Component } from './ejercicio4/ejercicio4.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import {MatTableModule} from '@angular/material/table';
 
 
 
@@ -30,7 +31,8 @@ import {MatIconModule} from '@angular/material/icon';
     FormsModule,
     MatCheckboxModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
